@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import HomePage from "./HomePage";
-import EditPage from "./EditPage";
+import HomePage from "./Component/HomePage/HomePage";
+import EditPage from "./Component/EditPage/EditPage";
 
 class App extends React.Component {
   render() {
@@ -15,25 +15,5 @@ class App extends React.Component {
     );
   }
 }
-
-/*
-class App extends React.Component {
-  state = {
-    response: null,
-  };
-
-  componentDidMount() {
-    axios.get("http://a79799842e12.ngrok.io/edit/info").then((result) => {
-      console.log(result);
-      this.setState({
-        response: result.data.messages,
-      });
-    });
-  }
-  render() {
-    return <Wrapper>{this.state.response}</Wrapper>;
-  }
-}
-*/
 
 export default App;
