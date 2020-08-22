@@ -60,6 +60,21 @@ class HomePage extends React.Component {
                   Home
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#resepsi">
+                  Pelaksanaan Resepsi
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#cerita">
+                  Cerita Pertemuan Mempelai
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#galeri">
+                  Galeri
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -91,34 +106,36 @@ class HomePage extends React.Component {
         </div>
         {/* header end */}
         {/* info resepsi */}
-        <div id="resepsi" className="container">
-          <div class="row mb-4">
-            <div class="col text-center">
-              <h2>Pelaksanaan Resepsi</h2>
+        <div id="resepsi">
+          <div className="container">
+            <div class="row mb-4">
+              <div class="col text-center">
+                <h2>Pelaksanaan Resepsi</h2>
+              </div>
             </div>
-          </div>
-          <hr />
-          <div className="row justify-content-center">
-            <div className="col-md-3 text-center">
-              <p>Tanggal Pelaksanaan</p>
+            <hr />
+            <div className="row justify-content-center">
+              <div className="col-md-3 text-center">
+                <p>Tanggal Pelaksanaan</p>
+              </div>
+              <div className="col-md-3 text-center">
+                <p>Waktu</p>
+              </div>
+              <div className="col-md-3 text-center">
+                <p>Lokasi</p>
+              </div>
             </div>
-            <div className="col-md-3 text-center">
-              <p>Waktu</p>
-            </div>
-            <div className="col-md-3 text-center">
-              <p>Lokasi</p>
-            </div>
-          </div>
 
-          <div className="row justify-content-center">
-            <div className="col-md-3 text-center">
-              <h4>{this.state.tanggal}</h4>
-            </div>
-            <div className="col-md-3 text-center">
-              <h4>{this.state.waktu}</h4>
-            </div>
-            <div className="col-md-3 text-center">
-              <h4>{this.state.lokasi}</h4>
+            <div className="row justify-content-center">
+              <div className="col-md-3 text-center">
+                <h4>{this.state.tanggal}</h4>
+              </div>
+              <div className="col-md-3 text-center">
+                <h4>{this.state.waktu}</h4>
+              </div>
+              <div className="col-md-3 text-center">
+                <h4>{this.state.lokasi}</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -126,7 +143,7 @@ class HomePage extends React.Component {
 
         {/* cerita */}
 
-        <div id="resepsi" className="container bg-light pb-4">
+        <div id="cerita" className="container bg-light pb-4">
           <div class="row mb-4">
             <div class="col text-center">
               <h2>Cerita Pertemuan Mempelai</h2>
